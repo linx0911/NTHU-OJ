@@ -1,7 +1,6 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
-#include<iostream>
+#include<cstdio>
+#include<cstdlib>
+#include<cstring>
 using namespace std;
 typedef struct _node{
     struct _node *left;
