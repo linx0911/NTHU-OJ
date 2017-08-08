@@ -12,10 +12,9 @@ int main(){
         gets(input);
         int input_len = strlen(input), flag = 1;
         for(int i = 0; i < input_len && flag == 1; i++){
-            if(input[i] == '{') arr.push(input[i]);
-            else if(input[i] == '[') arr.push(input[i]);
-            else if(input[i] == '(') arr.push(input[i]);
-            else if(input[i] == '<') arr.push(input[i]);
+            if(input[i] == '{' || input[i] == '[' || input[i] == '(' || input[i] == '<')
+                arr.push(input[i]);
+
             else if(input[i] == '}'){
                 if(!arr.empty() && arr.top() == '{') arr.pop();
                 else flag = 0;
